@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #2e2e2e;  /* тёмно-серый фон */
+color: #d4d4d4;             /* светло-серый текст */
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="bookListWidget">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>0</y>
+      <width>256</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #323f4e;      /* чуть светлее, темно-синий серый */
+border: 2px solid #4a6ea5;      /* синий акцент */
+border-radius: 6px;
+padding: 4px;
+font-size: 14px;
+color: #d4d4d4;
+
+QListWidget::item:selected, QTableWidget::item:selected, QTreeWidget::item:selected {
+    background-color: #527fbb;
+    color: white;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>0</y>
+      <width>160</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>4</number>
+     </property>
+     <item>
+      <widget class="QLineEdit" name="titleEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: #2f3e55;      /* темно-синий с серым оттенком */
+border: 2px solid #4a6ea5;      /* синий цвет, как у кнопок */
+border-radius: 6px;
+padding: 6px 12px;
+font-size: 14px;
+color: #d4d4d4;
+selection-background-color: #527fbb; /* светло-синий выделение */
+selection-color: white;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Название</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="authorEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: #2f3e55;      /* темно-синий с серым оттенком */
+border: 2px solid #4a6ea5;      /* синий цвет, как у кнопок */
+border-radius: 6px;
+padding: 6px 12px;
+font-size: 14px;
+color: #d4d4d4;
+selection-background-color: #527fbb; /* светло-синий выделение */
+selection-color: white;
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Автор</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: #3a6ea5;  /* спокойный синий */
+color: #f0f0f0;
+border-radius: 8px;
+padding: 8px 16px;
+font-weight: 600;
+border: 1px solid #2e5480;
+font-size: 14px;
+</string>
+       </property>
+       <property name="text">
+        <string>AddBook</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteButton">
+       <property name="styleSheet">
+        <string notr="true">background-color: #b85c5c;    /* мягкий красный */
+color: #f0e8e8;              /* светлый текст */
+border-radius: 8px;
+padding: 8px 16px;
+font-weight: 600;
+border: 1px solid #8b4040;   /* чуть темнее рамка */
+font-size: 14px;
+</string>
+       </property>
+       <property name="text">
+        <string>DellBook</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="searchEdit">
+       <property name="styleSheet">
+        <string notr="true">background-color: #2f3e55;      /* темно-синий с серым оттенком */
+border: 2px solid #4a6ea5;      /* синий цвет, как у кнопок */
+border-radius: 6px;
+padding: 6px 12px;
+font-size: 14px;
+color: #d4d4d4;
+selection-background-color: #527fbb; /* светло-синий выделение */
+selection-color: white;
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>Поиск</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
